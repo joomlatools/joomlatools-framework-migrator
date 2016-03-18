@@ -81,8 +81,8 @@ defined('KOOWA') or die; ?>
                     </p>
                 </div>
                 <div class="migrator__content">
-                    <p><a class="migrator_go_to" href="<?= route('view=extensions&tmpl=index'); ?>">
-                            <?= translate('Go back to site') ?></a></p>
+                    <p><a class="migrator_go_to" href="<?= $go_back; ?>">
+                            <?= translate('Go back') ?></a></p>
                 </div>
             <? endif; ?>
         </div>
@@ -129,8 +129,8 @@ defined('KOOWA') or die; ?>
                 </p>
             </div>
             <div class="migrator__content">
-                <p><a class="migrator_button" href="<?= route('view=extensions&tmpl=index'); ?>">
-                <?= translate('Go back to Site') ?></a></p>
+                <p><a class="migrator_button" href="<?= $go_back ?>">
+                <?= translate('Go back') ?></a></p>
             </div>
         </div>
     </div>

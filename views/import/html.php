@@ -96,6 +96,7 @@ class ComMigratorViewImportHtml extends ComKoowaViewHtml
     {
         $data = $this->getData();
 
+        $context->data->go_back              = $this->getObject('request')->getReferrer();
         $context->data->missing_dependencies = $this->getMissingDependencies();
         $context->data->token                = $this->getObject('user')->getSession()->getToken();
         $context->data->server_upload_limit  = $this->getServerUploadLimit();

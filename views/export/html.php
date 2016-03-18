@@ -40,6 +40,8 @@ class ComMigratorViewExportHtml extends ComKoowaViewHtml
         $data  = $this->getData();
         $exporters = KObjectConfig::unbox($data['exporters']);
 
+        $context->data->go_back = $this->getObject('request')->getReferrer();
+
         if (empty($exporters)) {
             $this->setLayout('error');
             $context->layout = $this->getLayout();

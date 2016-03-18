@@ -21,7 +21,7 @@ defined('KOOWA') or die; ?>
             </div>
             <div class="migrator__content">
                 <p style="display:block;"><a class="migrator_button"
-                     href="<?= route('view=extensions&tmpl=index'); ?>"><?= translate('Go back to Site') ?></a></p>
+                     href="<?= $go_back ?>"><?= translate('Go back') ?></a></p>
             </div>
             <div class="migrator__content">
                 <p>

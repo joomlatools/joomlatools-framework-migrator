@@ -60,8 +60,8 @@ defined('KOOWA') or die; ?>
 
         </div>
         <div class="migrator__content">
-            <p><a class="migrator_go_to" href="<?= route('view=extensions&tmpl=index'); ?>">
-                    <?= translate('Go back to site') ?></a></p>
+            <p><a class="migrator_go_to" href="<?= $go_back ?>">
+                    <?= translate('Go back') ?></a></p>
         </div>
         <? endif; ?>
 
@@ -84,8 +84,8 @@ defined('KOOWA') or die; ?>
             <?= translate('The import process has successfully completed!') ?>
         </div>
         <div class="migrator__content">
-            <p><a class="migrator_button migrator_go_to" href="<?= route('view=extensions&tmpl=index'); ?>">
-                <?= translate('Go back to site') ?></a></p>
+            <p><a class="migrator_button migrator_go_to" href="<?= $go_back ?>">
+                <?= translate('Go back') ?></a></p>
         </div>
     </div>
 </div>
