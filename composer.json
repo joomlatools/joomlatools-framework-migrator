@@ -1,0 +1,30 @@
+{
+    "name": "joomlatools/joomlatools-migrator",
+    "type": "nooku-component",
+    "license": "GPLv3",
+    "description": "A reusable component for migrations",
+    "keywords": [
+        "nooku",
+        "components",
+        "migrator"
+    ],
+    "homepage": "https://github.com/joomlatools/joomlatools-migrator",
+    "authors": [
+        {
+            "name": "Timble",
+            "email": "info@timble.net",
+            "homepage": "http://www.timble.net"
+        }
+    ],
+    "require": {
+        "nooku/nooku-framework": "~2.1"
+    },
+    "autoload": {
+        "files": ["autoload.php"]
+    },
+    "nooku-component": {
+        "identifier": "joomlatools-migrator",
+        "name": "migrator",
+        "version": "1.0.0"
+    }
+}
