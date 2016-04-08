@@ -1,23 +1,19 @@
-# Joomlatools Migrator
+# Migrator for Joomlatools Framework
 
-## What is Joomlatools Migrator?
-
-Joomlatools Migrator is a re-usable component for exporting and importing extension data.
+This is a re-usable component for exporting and importing extension data.This component is built on top of [Joomlatools Framework](https://github.com/joomlatools/joomlatools-framework). 
 
 ## Requirements
 
-- Nooku Framework 2.1 or newer.
-- PHP 5.3 or newer.
-- MySQL 5.
+- Joomlatools Framework 2 or newer
+- PHP 5.3 or newer
+- MySQL 5
 
 ## Installation
 
-Joomlatools Migrator can and should be installed by using [Composer](https://getcomposer.org/).
-
-Go to the root directory of your Joomla installation in command line and execute this command:
+Install using [Composer](https://getcomposer.org/). Go to the root directory of your Joomla installation in command line and execute this command:
 
 ```
-composer require joomlatools/joomlatools-migrator:*
+composer require joomlatools/joomlatools-framework-migrator:*
 ```
 
 The component will be installed in the `vendor` folder of the root directory of your Joomla site. The composer installer 
@@ -57,15 +53,12 @@ Then navigate to `view=export` or `view=import` in your extension to perform mig
 
 ## Contributing
 
-Joomlatools Migrator is an open source, community-driven project. Contributions are welcome from everyone. We have [contributing guidelines](CONTRIBUTING.md) to help you get started.
+This component is an open source, community-driven project. Contributions are welcome from everyone. We have [contributing guidelines](CONTRIBUTING.md) to help you get started.
 
 ## Authors
 
-See the list of [contributors](https://github.com/joomlatools/joomlatools-migrator/contributors).
+See the list of [contributors](https://github.com/joomlatools/joomlatools-framework-migrator/contributors).
 
 ## License
 
-The `joomlatools-migrator` component is free and open-source software licensed under the [GPLv3 license](gplv3-license).
-
-[gitlab-flow]: http://doc.gitlab.com/ee/workflow/gitlab_flow.html
-[gplv3-license]: https://github.com/joomlatools/joomlatools-migrator/blob/master/LICENSE.txt
+The `joomlatools-framework-migrator` component is free and open-source software licensed under the [GPLv3 license](LICENSE.txt).
