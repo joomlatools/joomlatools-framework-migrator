@@ -1,6 +1,6 @@
-# Migrator for Joomlatools Framework
+# Migrator Component for Joomlatools Framework
 
-This is a re-usable component for exporting and importing extension data.This component is built on top of [Joomlatools Framework](https://github.com/joomlatools/joomlatools-framework). 
+This is a re-usable component for exporting and importing extension data for [Joomlatools Framework].
 
 ## Requirements
 
@@ -62,3 +62,5 @@ See the list of [contributors](https://github.com/joomlatools/joomlatools-framew
 ## License
 
 The `joomlatools-framework-migrator` component is free and open-source software licensed under the [GPLv3 license](LICENSE.txt).
+
+[Joomlatools Framework]: http://www.joomlatools.com/developer/framework/
