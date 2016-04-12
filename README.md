@@ -13,7 +13,7 @@ This is a re-usable component for exporting and importing extension data for [Jo
 Install using [Composer](https://getcomposer.org/). Go to the root directory of your Joomla installation in command line and execute this command:
 
 ```
-composer require joomlatools/joomlatools-framework-migrator:*
+composer require joomlatools/framework-migrator:*
 ```
 
 The component will be installed in the `vendor` folder of the root directory of your Joomla site. The composer installer 
