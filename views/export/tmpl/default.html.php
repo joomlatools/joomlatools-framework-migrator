@@ -8,7 +8,7 @@
 defined('KOOWA') or die; ?>
 
 <?= helper('ui.bootstrap') ?>
-<?= helper('ui.load') ?>
+<?= helper('ui.load', array('styles' => false)) ?>
 
 <ktml:script src="media://koowa/com_migrator/js/migrator.js" />
 <ktml:script src="media://koowa/com_migrator/js/export.js" />
