@@ -69,7 +69,6 @@ class ComMigratorControllerImport extends ComMigratorControllerMigrator
             foreach ($this->getConfig()->importers as $extension => $identifier)
             {
                 $config = array('extension' => $extension);
-
                 if ($importer = $this->_createImporter($identifier, $config)) {
                     $importers[$extension] = $importer;
                 }
@@ -103,7 +102,8 @@ class ComMigratorControllerImport extends ComMigratorControllerMigrator
         $config['source_version'] = $this->getConfig()->source_version;
 
         if (strpos($identifier, '.') === false) {
-            $identifier = 'com:migrator.migrator.import.'.$identifier;
+            $pkg = isset($config['extension']) ? $config['extension'] : 'migrator';
+            $identifier = sprintf('com:%s.migrator.import.%s', $pkg, $identifier);
         }
 
         $importer = $this->getObject($identifier, $config);
