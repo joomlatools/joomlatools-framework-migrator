@@ -22,10 +22,6 @@ class ComMigratorControllerBehaviorUploadable extends KControllerBehaviorAbstrac
             throw new RuntimeException('JSON export file not found');
         }
 
-        if (is_null($version = $this->getVersion($config->extension->name))) {
-            throw new RuntimeException('The import extension is not installed');
-        }
-
         $this->getMixer()->getConfig()->extension      = $config->extension->name;
         $this->getMixer()->getConfig()->source_version = $config->extension->version;
     }
