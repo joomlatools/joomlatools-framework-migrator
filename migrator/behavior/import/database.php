@@ -410,6 +410,7 @@ class ComMigratorMigratorBehaviorImportDatabase extends KControllerBehaviorAbstr
     protected function _convertCsvtoArray(SplFileObject $file)
     {
         $file->setFlags(SplFileObject::READ_CSV | SplFileObject::READ_AHEAD | SplFileObject::SKIP_EMPTY | SplFileObject::DROP_NEW_LINE);
+        $file->setCsvControl(',', '"', '"');
 
         $headers = array();
         $data    = array();

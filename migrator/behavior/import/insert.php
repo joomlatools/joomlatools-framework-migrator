@@ -114,6 +114,8 @@ class ComMigratorMigratorBehaviorImportInsert extends KControllerBehaviorAbstrac
         $query = $this->getObject('lib:database.query.insert');
 
         $file->setFlags(SplFileObject::READ_CSV | SplFileObject::READ_AHEAD | SplFileObject::SKIP_EMPTY | SplFileObject::DROP_NEW_LINE);
+        $file->setCsvControl(',', '"', '"');
+
         $query->table($table);
 
         $unset = array();
