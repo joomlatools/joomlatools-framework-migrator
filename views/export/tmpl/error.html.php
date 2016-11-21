@@ -9,7 +9,7 @@ defined('KOOWA') or die; ?>
 
 <ktml:style src="media://koowa/com_migrator/css/migrator.css" />
 
-<div class="koowa">
+<div class="k-ui-namespace">
     <div class="migrator">
         <div class="migrator__header">
             <img class="joomlatools_logo" src="media://koowa/com_migrator/img/joomlatools_logo_80px.png" alt="Joomlatools logo" />
