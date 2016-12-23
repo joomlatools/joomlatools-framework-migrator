@@ -4,8 +4,8 @@ This is a re-usable component for exporting and importing extension data for [Jo
 
 ## Requirements
 
-- Joomlatools Framework 2 or newer
-- PHP 5.3 or newer
+- Joomlatools Framework 3
+- PHP 5.4 or newer
 - MySQL 5
 
 ## Installation
@@ -13,7 +13,7 @@ This is a re-usable component for exporting and importing extension data for [Jo
 Install using [Composer](https://getcomposer.org/). Go to the root directory of your Joomla installation in command line and execute this command:
 
 ```
-composer require joomlatools/framework-migrator:*
+composer require joomlatools/framework-migrator:1.*
 ```
 
 The component will be installed in the `vendor` folder of the root directory of your Joomla site. The composer installer 
