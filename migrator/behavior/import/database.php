@@ -605,9 +605,16 @@ SQL;
      */
     protected function _truncateTable($table)
     {
-        $query = sprintf('TRUNCATE TABLE `%s%s`', JFactory::getDbo()->getPrefix(), $table);
+        $adapter = $this->getObject('lib:database.adapter.mysqli');
+        $queries = [
+            'SET FOREIGN_KEY_CHECKS = 0',
+            sprintf('TRUNCATE TABLE `%s%s`', JFactory::getDbo()->getPrefix(), $table),
+            'SET FOREIGN_KEY_CHECKS = 1',
+        ];
 
-        $this->getObject('lib:database.adapter.mysqli')->execute($query);
+        foreach ($queries as $query) {
+            $adapter->execute($query);
+        }
     }
 
     /**
@@ -617,9 +624,16 @@ SQL;
      */
     protected function _dropTable($table)
     {
-        $query = sprintf('DROP TABLE IF EXISTS `%s%s`', JFactory::getDbo()->getPrefix(), $table);
+        $adapter = $this->getObject('lib:database.adapter.mysqli');
+        $queries = [
+            'SET FOREIGN_KEY_CHECKS = 0',
+            sprintf('DROP TABLE IF EXISTS `%s%s`', JFactory::getDbo()->getPrefix(), $table),
+            'SET FOREIGN_KEY_CHECKS = 1',
+        ];
 
-        $this->getObject('lib:database.adapter.mysqli')->execute($query);
+        foreach ($queries as $query) {
+            $adapter->execute($query);
+        }
     }
 
     /**
