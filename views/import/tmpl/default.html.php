@@ -43,7 +43,7 @@ defined('KOOWA') or die; ?>
         <div class="migrator__wrapper migrator--step1">
             <h1><?= translate('Start import') ?></h1>
             <?
-            if (KObjectConfig::unbox($missing_dependencies) && object('request')->getQuery()->has('document_init_offset')): ?>
+            if (KObjectConfig::unbox($missing_dependencies)): ?>
                 <div class="alert alert-error">
                     <h3><?= translate('Missing Requirements') ?></h3>
                     <ul>
