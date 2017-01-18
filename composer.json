@@ -1,6 +1,6 @@
 {
     "name": "joomlatools/framework-migrator",
-    "type": "nooku-component",
+    "type": "joomlatools-extension",
     "license": "GPLv3",
     "description": "A reusable component for migrations",
     "keywords": [
@@ -24,12 +24,7 @@
     "require": {
         "joomlatools/framework": "~3.0"
     },
-    "autoload": {
-        "files": ["autoload.php"]
-    },
-    "nooku-component": {
-        "identifier": "com:migrator",
-        "name": "migrator",
-        "version": "1.0.2"
+    "extra": {
+      "joomlatools-component": "migrator"
     }
 }
