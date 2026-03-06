@@ -4,8 +4,8 @@ This is a re-usable component for exporting and importing extension data for [Jo
 
 ## Requirements
 
-- Joomlatools Framework 3
-- PHP 5.4 or newer
+- Joomlatools Framework 3 or newer
+- PHP 7.3 or newer
 - MySQL 5
 
 ## Installation
@@ -63,4 +63,4 @@ See the list of [contributors](https://github.com/joomlatools/joomlatools-framew
 
 The `joomlatools-framework-migrator` component is free and open-source software licensed under the [GPLv3 license](LICENSE.txt).
 
-[Joomlatools Framework]: http://www.joomlatools.com/developer/framework/
+[Joomlatools Framework]: https://www.joomlatools.com/developer/framework/
